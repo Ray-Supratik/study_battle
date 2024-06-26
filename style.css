@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  /* background: rgb(0, 255, 179); */
+  background: rgb(7, 93, 136);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: cursive;
+}
+header {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 70%;
+  /* border: 1px solid black; */
+}
+h1 {
+  font-size: 3.5rem;
+}
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(7, 93, 136);
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+header p {
+  font-size: 1.5rem;
+}
+
+.filterBtn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  width: 100px;
+  margin-right: 20px;
+  padding: 0.5rem;
+  text-align: center;
+}
+.filterBtn:hover {
+  cursor: pointer;
+}
+
+.timer-container {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 30rem;
+  padding: 1.5rem;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.timer {
+  text-align: center;
+  font-size: 5rem;
+  /* border: 1px solid black; */
+}
+
+.bttn-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.button {
+  padding: 0.7rem;
+  font-family: inherit;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(213, 29, 29);
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(248, 68, 68);
+}
+
+.button:active {
+  background-color: rgb(255, 0, 0);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: rgb(252, 78, 78);
+  width: 35rem;
+  padding: 2.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  height: 20rem;
+}
+
+.field {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field input {
+  width: 15rem;
+  border: none;
+  padding: 0.5rem;
+}
+
+.field input:focus {
+  border: none;
+  outline: none;
+}
+
+.verifyBttns {
+  padding: 0.5rem;
+  margin-right: 20px;
+  width: 5rem;
+  font-family: inherit;
+  border: none;
+  margin-top: 30px;
+}
+.verifyBttns:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.verifyBttns:active {
+  background-color: white;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.player-list {
+  height: 80%;
+  /* border: 2px solid black; */
+  background-color: rgb(7, 93, 136);
+  color: white;
+  position: absolute;
+  width: 400px;
+  top: 50px;
+  left: 50px;
+  /* padding: 1.5rem; */
+}
+.list {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border-radius: 10px; */
+  margin-top: 20px;
+  /* border: 1px solid rgb(45, 34, 34); */
+  overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.player {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.status {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 247, 0);
+  border-radius: 100%;
+  display: inline-block;
+  border: 2px solid black;
+  background-color: red;
+}
+
+.rank {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+
+.rankTitle {
+  font-size: 2rem;
+}
+.winner {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  font-size: 3rem;
+}
+.notice {
+  margin-top: 20px;
+}
+.total {
+  position: absolute;
+  width: 400px;
+  top: 100px;
+  right: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.total-time-container {
+  font-size: 3.5rem;
+}
+.value {
+  font-size: 3rem;
+}
+.tag {
+  font-size: 1.5rem;
+}
+
+.online {
+  background-color: greenyellow;
+}
+
+.active {
+  background-color: white;
+  color: black;
+}

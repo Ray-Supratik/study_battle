@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoopy</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Study battle⚔️</h1>
+      <p>Let's see who can study the longest! 🕒</p>
+    </header>
+    <main class="hide">
+      <div class="player-list">
+        <div class="header">
+          <span class="rankTitle">RANK🏆</span>
+          <span class="filter">
+            <span class="totalTime filterBtn">Total🚀</span
+            ><span class="today filterBtn active">Today💫</span>
+          </span>
+        </div>
+        <div class="list"></div>
+      </div>
+
+      <div class="timer-container">
+        <div class="timer">
+          <span id="hoursSpan">00</span>:<span id="minutesSpan">00</span>:<span
+            id="secondsSpan"
+            >00</span
+          >
+        </div>
+        <div class="bttn-container">
+          <button class="button" id="start">Start</button>
+          <button class="button" id="pause">Pause</button>
+          <!-- <button class="button" id="reset">Reset</button> -->
+        </div>
+      </div>
+      <div class="total">
+        <h2 class="totalHrs">Total Hours</h2>
+        <p class="totalHrsValue">
+          <span class="total-time-container">
+            <span class="total-hours"></span>:<span class="total-mins"></span
+            >:<span class="total-secs"></span>
+          </span>
+        </p>
+      </div>
+    </main>
+
+    <div class="modal">
+      <div class="field">
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" placeholder="e.g: Sourav" />
+      </div>
+      <div class="field">
+        <label for="pin">Pin:</label>
+        <input type="text" id="pin" placeholder="e.g: 5545(4 digit)" />
+      </div>
+
+      <div class="bttnField">
+        <button id="loginBttn" class="verifyBttns">Login</button>
+        <button id="signUpBttn" class="verifyBttns">Register</button>
+      </div>
+      <p class="notice"></p>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
