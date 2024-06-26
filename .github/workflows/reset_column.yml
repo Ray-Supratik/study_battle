@@ -2,8 +2,8 @@ name: Reset Supabase Column
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs every day at midnight UTC
-  workflow_dispatch: # Allows manual triggering of the workflow
+    - cron: '0 0 * * *'  # Runs every day at midnight UTC
+  workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
   reset-column:
@@ -11,16 +11,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: "20"
+          node-version: '20'  # Use Node.js 20
 
       - name: Install dependencies
         run: npm install @supabase/supabase-js
 
       - name: Run reset column script
         run: node reset_column.js
-
