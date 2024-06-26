@@ -7,7 +7,7 @@ const supabaseKey =
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const resetColumn = async () => {
-  const { error } = await supabase.from("codding battle").update({ time: 0 });
+  const { error } = await supabase.from("codding battle").update({ time: 0 }).neq('time', -1);
 
   if (error) {
     console.error("Error resetting column:", error);
